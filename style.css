@@ -9,5 +9,23 @@ body {
   h1 {
       font-size: 50px;
       color: rgb(56, 14, 241);
-
+      margin-top: 20px;
+      margin-bottom: 20px;
   }
+
+  p {
+      font-size: 20px;
+      color: black;
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+
+   .container {
+       width: 10px;
+       height: 500px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       max-width: 100px;
+       margin: 0 auto;
+   }
