@@ -5,3 +5,14 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
   }
+
+.choice-container {
+
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+    border-radius: 4px;
+    background: mediumpurple;
+    font-size: 20px;
+    min-width: auto;
+}
