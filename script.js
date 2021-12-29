@@ -63,3 +63,16 @@ function startQuiz = {} => {
 
 } 
 
+// setting function to move from one question to the next, and storing score//
+
+function getNewQuestion = () => {
+
+if (availableQuestions.length === 0 || questionCounter> maxQuestions) {
+
+    localStorage.setItem ('recentScore', score)
+
+    return window.location.assign('/highscore.html')
+}
+
+}
+
