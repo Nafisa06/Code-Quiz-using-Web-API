@@ -47,3 +47,19 @@ let questions = [
         answer: 1,
     }
 ]
+
+// setting number of points per correct question and maximum number of questions in quiz"
+
+var scorePoints = 10;
+var maxQuestions = 4;
+
+// setting function to start quiz and keep track of scores//
+
+function startQuiz = {} => {
+    score = 0
+    questionCounter = 0
+    availableQuestions = [...question]
+    getNewQuestion ()
+
+} 
+
