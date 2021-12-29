@@ -5,6 +5,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
   }
+/* set styling for the question choice containers*/
 
 .choice-container {
 
@@ -22,3 +23,8 @@ body {
     box-shadow: paleturquoise;
     transform: scale(1.02);
     }
+
+.choice-prefix {
+    padding: 20px;
+    color: papayawhip;
+}
