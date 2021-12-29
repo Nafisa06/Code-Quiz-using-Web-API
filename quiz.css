@@ -24,7 +24,15 @@ body {
     transform: scale(1.02);
     }
 
+/* setting text colour and padding to the prefix, and adding padding to the question choices*/
+
 .choice-prefix {
     padding: 20px;
     color: papayawhip;
+    }
+
+.choice-text {
+    padding: 20px;
+    width: 100%;
 }
+
