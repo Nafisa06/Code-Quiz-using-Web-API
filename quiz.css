@@ -16,3 +16,9 @@ body {
     font-size: 20px;
     min-width: auto;
 }
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: paleturquoise;
+    transform: scale(1.02);
+    }
