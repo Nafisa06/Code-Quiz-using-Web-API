@@ -11,11 +11,14 @@ body {
 
     display: flex;
     margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 100%;
     border-radius: 4px;
     background: mediumpurple;
     font-size: 20px;
     min-width: auto;
+    padding-left: 20px;
 }
 
 .choice-container:hover {
@@ -68,6 +71,7 @@ body {
     padding: 20px;
     font-size: 30px;
     font-weight: bolder;
+    margin-bottom: 50px;
 
  }
 
