@@ -73,3 +73,13 @@ body {
      }
      
  }
+
+ /* set styling for when answer correct and incorrect*/
+
+ .correct {
+     background: limegreen;
+ }
+
+ .incorrect {
+     background: red;
+ }
