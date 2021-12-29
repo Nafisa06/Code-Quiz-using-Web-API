@@ -52,3 +52,12 @@ body {
      text-align: center ;
  }
 
+ /* styling for the questions */
+
+ #question {
+
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+
+ }
