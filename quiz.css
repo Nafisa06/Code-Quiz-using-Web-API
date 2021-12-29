@@ -57,7 +57,7 @@ body {
  #question {
 
     padding: 20px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bolder;
 
  }
@@ -65,4 +65,11 @@ body {
  .time {
     text-align: center;
 
+ }
+
+ @media screen and (max-width:768px) {
+     .choice-container {
+         min-width: 40rem;
+     }
+     
  }
