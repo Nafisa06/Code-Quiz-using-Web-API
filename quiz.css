@@ -36,3 +36,19 @@ body {
     width: 100%;
 }
 
+/* score display settings*/
+
+#score {
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-prefix {
+    text-align: center;
+    font-size: 50px;
+ }
+
+ .score-main-text {
+     text-align: center ;
+ }
+
