@@ -41,6 +41,7 @@ body {
 #score {
     display: flex;
     justify-content: space-between;
+    font-size: 30px;
 }
 
 .score-prefix {
@@ -48,11 +49,19 @@ body {
     font-size: 50px;
  }
 
+ .score-item {
+     text-align:center
+ }
+
  .score-main-text {
      text-align: center ;
  }
 
- /* styling for the questions */
+ p {
+     padding-right: 60px;
+ }
+
+  /* styling for the questions */
 
  #question {
 
