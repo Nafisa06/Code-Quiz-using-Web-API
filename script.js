@@ -76,3 +76,12 @@ if (availableQuestions.length === 0 || questionCounter> maxQuestions) {
 
 }
 
+var questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+currentQuestion= availableQuestions[questionsIndex]
+question.innertext = currentQuestion.question
+
+choices.forEach (choice => {
+    var number = choice.dataset ['number']
+    choice.innertext = currentQuestion ['choice' + number]
+})
+
