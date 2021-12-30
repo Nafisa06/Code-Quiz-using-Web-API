@@ -8,7 +8,6 @@ var scoreText = document.querySelector('#score');
 let currentQuestion = {}
 let acceptingAnswers = true
 let score = 0
-let questionCounter = 0
 let availableQuestions = []
 
 //setting questions as an array
@@ -55,17 +54,16 @@ var maxQuestions = 4;
 
 // setting function to start quiz and keep track of scores//
 
-function startQuiz = {} => {
-    score = 0
+startGame = () => {
     questionCounter = 0
-    availableQuestions = [...question]
-    getNewQuestion ()
-
-} 
+    score = 0
+    availableQuestions = [...questions]
+    getNewQuestion()
+}
 
 // setting function to move from one question to the next, and storing score//
 
-function getNewQuestion = () => {
+getNewQuestion = () => {
 
 if (availableQuestions.length === 0 || questionCounter> maxQuestions) {
 
@@ -74,10 +72,9 @@ if (availableQuestions.length === 0 || questionCounter> maxQuestions) {
     return window.location.assign('/highscore.html')
 }
 
-}
 
-var questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-currentQuestion= availableQuestions[questionsIndex]
+var questionIndex = Math.floor(Math.random() * availableQuestions.length)
+currentQuestion= availableQuestions[questionIndex]
 question.innertext = currentQuestion.question
 
 choices.forEach (choice => {
@@ -85,9 +82,10 @@ choices.forEach (choice => {
     choice.innertext = currentQuestion ['choice' + number]
 })
 
+
 //choosing answers//
 
-availableQuestions.splice(questionsIndex, 1) 
+availableQuestions.splice(questionIndex, 1) 
 
     acceptingAnswers = true
 
@@ -103,7 +101,7 @@ choices.forEach(choice => {
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
         if(classToApply === 'correct') {
-            incrementScore(SCORE_POINTS)
+            incrementScore(scorePoints)
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
@@ -115,3 +113,12 @@ choices.forEach(choice => {
         }, 1000)
     })
 })
+
+
+incrementScore = num => {
+    score +=num
+    scoreText.innerText = score
+}
+}
+
+startGame()
