@@ -85,3 +85,33 @@ choices.forEach (choice => {
     choice.innertext = currentQuestion ['choice' + number]
 })
 
+//choosing answers//
+
+availableQuestions.splice(questionsIndex, 1) 
+
+    acceptingAnswers = true
+
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+        var selectedChoice = e.target
+        var selectedAnswer = selectedChoice.dataset['number']
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if(classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+
+        }, 1000)
+    })
+})
