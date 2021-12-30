@@ -8,6 +8,7 @@ var scoreText = document.querySelector('#score');
 let currentQuestion = {}
 let acceptingAnswers = true
 let score = 0
+let questionCounter = 0
 let availableQuestions = []
 
 //setting questions as an array
@@ -69,7 +70,7 @@ if (availableQuestions.length === 0 || questionCounter> maxQuestions) {
 
     localStorage.setItem ('recentScore', score)
 
-    return window.location.assign('/highscore.html')
+    return window.location.assign('/score.html')
 }
 
 
@@ -102,7 +103,12 @@ choices.forEach(choice => {
 
         if(classToApply === 'correct') {
             incrementScore(scorePoints)
+                }
+                
+        if (classToApply === 'incorrect') {
+            decrementScore (scorePoints)
         }
+        
 
         selectedChoice.parentElement.classList.add(classToApply)
 
@@ -119,6 +125,11 @@ incrementScore = num => {
     score +=num
     scoreText.innerText = score
 }
+}
+
+decrementScore = num => {
+    score -= num
+    scoreText.innerText = score
 }
 
 startGame()

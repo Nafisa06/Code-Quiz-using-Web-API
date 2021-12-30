@@ -75,10 +75,22 @@ body {
 
  }
 
+ /* styling for the timer button*/
+
  .time {
     text-align: center;
-
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    border: blueviolet;
+    justify-content: center;
+    background-color: darkorchid;
+    color: ghostwhite;
+    
  }
+
+ 
 
  @media screen and (max-width:768px) {
      .choice-container {
