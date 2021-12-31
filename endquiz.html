@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="container">
-        <div id="end" class="flex-column flex center">
+        <div id="end" >
             <h1>All Done!</h1>
             <h2 id="finalScore">Final Score 0</h2>
             <form class="end-form-container">
                 <h2 id="end-text">Enter your initials to save your score</h2>
                 <input type="text" name="name" id="username" placeholder="Enter your initials">
-                <button class="button" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Submit</button>
+                <button class="button" id="saveScoreButton" type="submit" onclick="saveHighScore(event)" disabled>Submit</button>
             </form>
             <a href="/highscore.html" class="button" id="highscorelink">Go to high score page</a>
         </div>
@@ -25,5 +25,7 @@
 </html>
     
     </div>
+
+        <script src="endquiz.js"></script>
 </body>
 </html>
