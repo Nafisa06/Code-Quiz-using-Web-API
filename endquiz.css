@@ -19,6 +19,37 @@ body {
     justify-content: center;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex center {
+
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     color: blueviolet;
+}
+
+#highscorelink {
+    background: rgb(137, 119, 224);
+    font-weight: bolder;
+    color: cornsilk;
+    justify-content: center;
+    text-align: center;
+    padding-block: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#highscorelink:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: indigo;
 }
