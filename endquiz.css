@@ -40,10 +40,11 @@ h1 {
     color: cornsilk;
     justify-content: center;
     text-align: center;
-    padding-block: 10px;
-    margin-top: 10px;
+    margin-top: 100px;
     margin-bottom: 10px;
     margin-right: 10px;
+    position: relative;
+    position:relative; top: 20px;p
 }
 
 #highscorelink:hover {
